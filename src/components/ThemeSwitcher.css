@@ -1,0 +1,38 @@
+.theme-switcher {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.toggle-label {
+    width: 60px;
+    height: 30px;
+    margin: 5px;
+    background-color: #ccc;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-label .slider {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.3s;
+}
+
+input[type="checkbox"]:checked + .toggle-label {
+    background-color: rgb(32, 12, 211); /* Change this color to your liking */
+}
+
+input[type="checkbox"]:checked + .toggle-label .slider {
+    transform: translateX(30px);
+}

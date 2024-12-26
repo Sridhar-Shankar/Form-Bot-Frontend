@@ -1,0 +1,241 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0 auto;
+  line-height: normal;
+  background-color: #171923;
+  color: white;
+  overflow-x: hidden;
+}
+
+:root {
+  --font-open-sans: "Open Sans";
+  --font-outfit: Outfit;
+  --font-size-base: 1rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-cornflowerblue-100: #7ea6ff;
+
+  /* Paddings */
+  --padding-base: 1rem;
+  --padding-5xs: 0.5rem;
+  --padding-xl: 1.25rem;
+
+  /* Border radiuses */
+  --br-7xs: 6px;
+
+  /* Font sizes */
+  --font-size-xxs: 14px;
+  --font-size-xs: 16px;
+  --font-size-sm: 18px;
+
+  /* Medium font sizes */
+  --font-size-md: 20px;
+  --font-size-ml: 22px;
+  --font-size-ml2: 25px;
+  --font-size-ml3: 27.33px;
+  --font-size-ml4: 36px;
+
+  /* Large font sizes */
+  --font-size-lg: 60px;
+  --font-size-xl: 72px;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Line Heights */
+  --line-height-small: 21.6px;
+  --line-height-medium: 24px;
+  --line-height-large: 27px;
+  --line-height-xl: 30px;
+  --line-height-xxl: 43.2px;
+  --line-height-huge: 72px;
+  --line-height-tiny: 16.9px;
+  --line-height-base: 19.2px;
+  --line-height-big: 41px;
+
+  /* Fonts */
+  --sans: "Open Sans", sans-serif;
+  --Roboto: "Roboto", sans-serif;
+  --outfit: "Outfit", sans-serif;
+  --indie: "Indie Flower", cursive;
+  --poppins: "Poppins", sans-serif;
+  --inter: "Inter", sans-serif;
+}
+
+/* Reset for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.section-margin {
+  margin-bottom: 60px;
+}
+.section-margin:last-child {
+  margin-bottom: 0;
+}
+
+/* Modal Styles */
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 540px;
+  height: 261px;
+  font-family: var(--sans);
+  padding: 1rem;
+}
+
+.modalContent input {
+  height: 73px;
+  background-color: rgba(31, 31, 35, 1);
+  outline: none;
+  border: none;
+  font-size: 20px;
+  font-weight: var(--font-weight-semibold);
+  padding-left: 1rem;
+  color: white;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons button {
+  line-height: 41px;
+  background-color: transparent;
+  border: 2px solid #a0aec0; /* Clear border in light theme */
+  font-size: var(--sans);
+  font-weight: var(--font-weight-semibold);
+  font-size: 28px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  border: 2px solid rgba(150, 150, 150, 0.8); /* Border on hover */
+}
+
+.buttons span {
+  height: 100%;
+  width: 2px;
+  background-color: rgba(71, 71, 74, 1);
+}
+
+.buttons button:first-child {
+  color: rgba(75, 131, 255, 1);
+}
+
+/* Flexbox Utility Classes */
+.flex {
+  display: flex;
+}
+
+.inline-block {
+  display: block;
+}
+
+.block {
+  display: inline-block;
+}
+
+/* Flex Direction */
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Text Alignment */
+.text-center {
+  text-align: center;
+}
+
+/* Reusable Width and Height */
+.w-screen {
+  width: 100vw;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.size-full {
+  width: 100%;
+  height: 100%;
+}
+
+.size-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Reusable Position */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/* Light Theme Styles */
+body.light {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+/* Button borders specifically in the light theme */
+body.light .buttons button {
+  border: 2px solid #a0aec0; /* Solid border in light theme */
+}
+
+body.light .buttons button:hover {
+  border: 2px solid rgba(150, 150, 150, 0.8); /* Hover effect border color */
+}
+
+/* Workspace Fix (Visibility) */
+.workspace {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  /* Ensure workspace is displayed */
+  background-color: #f9f9f9;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.dark {
+  background-color: black;
+  color: #ffffff;
+}

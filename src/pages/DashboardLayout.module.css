@@ -1,0 +1,153 @@
+/* General styles for the Dashboard Layout */
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Space between left, center, and right */
+  align-items: center;
+  height: 64px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.wrapper {
+  width: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--br-7xs);
+}
+
+.optionsContainer {
+  width: 95%;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: var(--font-weight-extrabold);
+  outline: none;
+  border: none;
+  font-family: var(--sans);
+  font-size: var(--font-size-xs);
+  padding: 0 0.5rem;
+}
+
+.optionsContainer option {
+  background-color: #171923;
+  color: rgba(255, 255, 255, 0.92);
+  font-family: var(--sans);
+  font-weight: var(--font-weight-semibold);
+  outline: none;
+  width: 300px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.optionsContainer option:last-child {
+  color: rgba(255, 165, 76, 1);
+}
+
+/* Centering the Workspace Dropdown */
+.centerWrapper {
+  flex-grow: 1; /* This makes it take all the remaining space */
+  display: flex;
+  justify-content: center; /* Center the dropdown */
+}
+
+.workspaceSelect {
+  width: 250px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: var(--font-weight-extrabold);
+  outline: none;
+  border: none;
+  font-family: var(--sans);
+  font-size: var(--font-size-xs);
+  padding: 0 0.5rem;
+}
+
+.workspaceSelect option {
+  background-color: #171923;
+  color: rgba(255, 255, 255, 0.92);
+  font-family: var(--sans);
+  font-weight: var(--font-weight-semibold);
+  outline: none;
+  width: 300px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+/* Controls section */
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.inviteButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  margin-left: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.inviteButton:hover {
+  background-color: #45a049;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal is on top */
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+  position: relative; /* Needed for positioning the close button */
+}
+
+.close {
+  position: absolute; /* Position it absolutely within the modalContent */
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  color: #aaa;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.permissionSelect {
+  margin: 10px 0;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
